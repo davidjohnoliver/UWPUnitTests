@@ -40,10 +40,24 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="Uno">
+      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.UWP\obj\Debug\net461\Uno.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.Foundation">
+      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.Foundation\obj\Debug\net461\Uno.Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Uno.UI">
+      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.UI\obj\Debug\net461\Uno.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uno.UI.Tests\GivenGrid_And_Alignment.cs" />
+    <Compile Include="Uno.UI.Tests\GivenGrid_And_AutoSized.cs" />
+    <Compile Include="Uno.UI.Tests\GivenGrid_And_Margin.cs" />
+    <Compile Include="Uno.UI.Tests\Given_Grid.cs" />
+    <Compile Include="Uno.UI.Tests\Given_GridLength.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
@@ -51,6 +65,12 @@
     </PackageReference>
     <PackageReference Include="MSTest.TestFramework">
       <Version>1.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.2</Version>
+    </PackageReference>
+    <PackageReference Include="Uno.Core">
+      <Version>1.28.0-dev.86</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />
