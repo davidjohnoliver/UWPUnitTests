@@ -9,6 +9,8 @@
     <Import_RootNamespace>UWPUnitTests2.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Helpers\AssertEx.cs"
+      Link="Helpers\AssertEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Context.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Namespaces.cs" />
   </ItemGroup>

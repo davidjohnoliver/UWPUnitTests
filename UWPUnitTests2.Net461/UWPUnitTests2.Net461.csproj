@@ -53,11 +53,11 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Uno.UI.Tests\GivenGrid_And_Alignment.cs" />
-    <Compile Include="Uno.UI.Tests\GivenGrid_And_AutoSized.cs" />
-    <Compile Include="Uno.UI.Tests\GivenGrid_And_Margin.cs" />
-    <Compile Include="Uno.UI.Tests\Given_Grid.cs" />
-    <Compile Include="Uno.UI.Tests\Given_GridLength.cs" />
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Alignment.cs" />
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_AutoSized.cs" />
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Margin.cs" />
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_Grid.cs" />
+    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_GridLength.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
