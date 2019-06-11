@@ -8,7 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+	<Grid>
+		<TextBlock Margin="50"
+				   Text="Tests completed" />
+	</Grid>
 </Page>
