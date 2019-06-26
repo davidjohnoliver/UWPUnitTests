@@ -72,8 +72,18 @@
     <PackageReference Include="Uno.Core">
       <Version>1.28.0-dev.86</Version>
     </PackageReference>
+    <PackageReference Include="Uno.SourceGenerationTasks">
+      <Version>1.32.0-dev.288</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <UnoUIGeneratorsBinPath>..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.SourceGenerators\bin\$(Configuration)</UnoUIGeneratorsBinPath>
+    <UnoUIMSBuildTasksPath>..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.Tasks\bin\$(Configuration)_Shadow</UnoUIMSBuildTasksPath>
+    <!-- <UnoForceProcessPRIResource>true</UnoForceProcessPRIResource> -->
+  </PropertyGroup>
+  <Import Project="..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.SourceGenerators\Content\Uno.UI.SourceGenerators.props" />
+  <Import Project="..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.Tasks\Content\Uno.UI.Tasks.targets" Condition="'$(SkipUnoResourceGeneration)' == '' " />
 </Project>
