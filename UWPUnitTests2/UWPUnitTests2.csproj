@@ -120,6 +120,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(UnoRepoRelativePath)App/Xaml/Test_Control.xaml.cs">
+      <DependentUpon>Xaml/Test_Control.xaml</DependentUpon>
+      <Link>Xaml/Test_Control.xaml.cs</Link>
+    </Compile>
     <Compile Include="$(UnoRepoRelativePath)App/App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <Link>App.xaml.cs</Link>
@@ -149,6 +153,16 @@
       <SubType>Designer</SubType>
       <Link>App.xaml</Link>
     </ApplicationDefinition>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Dictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Dictionary.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Control.xaml</Link>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

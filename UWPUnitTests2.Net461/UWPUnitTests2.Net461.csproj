@@ -62,6 +62,7 @@
     <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Margin.cs" />
     <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_Grid.cs" />
     <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_GridLength.cs" />
+    <Compile Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml.cs" Link="Xaml/Test_Control.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
@@ -82,6 +83,8 @@
   </ItemGroup>
   <ItemGroup Condition="'$(BuildingInsideUnoSourceGenerator)'!=''">
     <Page Include="$(UnoRepoRelativePath)/App/App.xaml" Link="App.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary.xaml" Link="Xaml/Test_Dictionary.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml" Link="Xaml/Test_Control.xaml" />
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
