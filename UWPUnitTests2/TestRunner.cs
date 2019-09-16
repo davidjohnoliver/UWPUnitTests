@@ -17,14 +17,29 @@ namespace UWPUnitTests2
 		{
 			var emptyParams = new object[0];
 
+			Exception ex = null;
+
 			foreach (var testClass in GetAllTestClasses(typeof(TestRunner).GetTypeInfo().Assembly))
 			{
 				foreach (var test in GetAllTestMethods(testClass))
 				{
 					var instance = Activator.CreateInstance(testClass.AsType());
 
-					test.Invoke(instance, emptyParams);
+
+					try
+					{
+						test.Invoke(instance, emptyParams);
+					}
+					catch (Exception e)
+					{
+						ex = ex ?? e;
+					}
 				}
+			}
+
+			if (ex != null)
+			{
+				throw ex;
 			}
 		}
 
