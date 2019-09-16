@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPUnitTests2.Net461", "UWP
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UWPUnitTests2.Shared", "UWPUnitTests2.Shared\UWPUnitTests2.Shared.shproj", "{607915A0-B854-41BE-943F-7987D371F0D3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4886A21A-BB02-4077-ACFE-256650B87A0C}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems*{383a8178-16e4-4c2a-82e8-352b7a28a7c2}*SharedItemsImports = 4
