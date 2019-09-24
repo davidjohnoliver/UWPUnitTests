@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)UnitTest2.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_Grid_And_Min_Max.cs" Link="GridTests\Given_Grid_And_Min_Max.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_Grid_Def_ActualSize.cs" Link="GridTests\Given_Grid_Def_ActualSize.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\ListViewBaseTests\Given_ListViewBase.cs" Link="ListViewBaseTests\Given_ListViewBase.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\TextBoxTests\Given_TextBox.cs" Link="TextBoxTests\Given_TextBox.cs" />
     <Compile Include="$(UnoRepoRelativePath)BinderTests\Given_Binder.TwoWay.cs" Link="BinderTests\Given_Binder.TwoWay.cs" />
