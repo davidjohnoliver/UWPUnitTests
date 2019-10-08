@@ -41,13 +41,13 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Uno">
-      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.UWP\obj\Debug\net461\Uno.dll</HintPath>
+      <HintPath>$(UnoRepoRelativePath)..\Uno.UWP\obj\Debug\net461\Uno.dll</HintPath>
     </Reference>
     <Reference Include="Uno.Foundation">
-      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.Foundation\obj\Debug\net461\Uno.Foundation.dll</HintPath>
+      <HintPath>$(UnoRepoRelativePath)..\Uno.Foundation\obj\Debug\net461\Uno.Foundation.dll</HintPath>
     </Reference>
     <Reference Include="Uno.UI">
-      <HintPath>..\..\..\..\nv\Uno.UI-ext\src\Uno.UI\obj\Debug\net461\Uno.UI.dll</HintPath>
+      <HintPath>$(UnoRepoRelativePath)..\Uno.UI\obj\Debug\net461\Uno.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,11 +57,11 @@
     <Compile Include="BindableMetadataProvider.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Alignment.cs" />
-    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_AutoSized.cs" />
-    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Margin.cs" />
-    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_Grid.cs" />
-    <Compile Include="..\..\..\..\nv\Uno.UI-ext\src\Uno.UI.Tests\Windows_UI_XAML_Controls\GridTests\Given_GridLength.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Alignment.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\GivenGrid_And_AutoSized.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\GivenGrid_And_Margin.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_Grid.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_GridLength.cs" />
     <Compile Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml.cs" Link="Xaml/Test_Control.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -90,10 +90,10 @@
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <UnoUIGeneratorsBinPath>..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.SourceGenerators\bin\$(Configuration)</UnoUIGeneratorsBinPath>
-    <UnoUIMSBuildTasksPath>..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.Tasks\bin\$(Configuration)_Shadow</UnoUIMSBuildTasksPath>
+    <UnoUIGeneratorsBinPath>$(UnoRepoRelativePath)..\SourceGenerators\Uno.UI.SourceGenerators\bin\$(Configuration)</UnoUIGeneratorsBinPath>
+    <UnoUIMSBuildTasksPath>$(UnoRepoRelativePath)..\SourceGenerators\Uno.UI.Tasks\bin\$(Configuration)_Shadow</UnoUIMSBuildTasksPath>
     <!-- <UnoForceProcessPRIResource>true</UnoForceProcessPRIResource> -->
   </PropertyGroup>
-  <Import Project="..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.SourceGenerators\Content\Uno.UI.SourceGenerators.props" />
-  <Import Project="..\..\..\..\nv\Uno.UI-ext\src\SourceGenerators\Uno.UI.Tasks\Content\Uno.UI.Tasks.targets" Condition="'$(SkipUnoResourceGeneration)' == '' " />
+  <Import Project="$(UnoRepoRelativePath)..\SourceGenerators\Uno.UI.SourceGenerators\Content\Uno.UI.SourceGenerators.props" />
+  <Import Project="$(UnoRepoRelativePath)..\SourceGenerators\Uno.UI.Tasks\Content\Uno.UI.Tasks.targets" Condition="'$(SkipUnoResourceGeneration)' == '' " />
 </Project>
