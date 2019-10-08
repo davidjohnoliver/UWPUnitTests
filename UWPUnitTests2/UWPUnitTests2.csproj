@@ -11,7 +11,7 @@
     <AssemblyName>UWPUnitTests2</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -158,6 +158,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <Link>Xaml/Test_Dictionary.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Dictionary_Inner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Dictionary_Inner.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Dictionary_Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Dictionary_Theme.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)..\SamplesApp\UITests.Shared\Windows_UI_Xaml\Resources\Test_Dictionary_Linked.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Linked/Test_Dictionary_Linked.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Styles.xaml</Link>
     </Page>
     <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Control.xaml">
       <Generator>MSBuild:Compile</Generator>

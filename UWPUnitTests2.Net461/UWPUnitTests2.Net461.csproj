@@ -84,7 +84,11 @@
   <ItemGroup Condition="'$(BuildingInsideUnoSourceGenerator)'!=''">
     <Page Include="$(UnoRepoRelativePath)/App/App.xaml" Link="App.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary.xaml" Link="Xaml/Test_Dictionary.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Inner.xaml" Link="Xaml/Test_Dictionary_Inner.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Theme.xaml" Link="Xaml/Test_Dictionary_Theme.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Styles.xaml" Link="Xaml/Test_Styles.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml" Link="Xaml/Test_Control.xaml" />
+    <Page Include="$(UnoRepoRelativePath)..\SamplesApp\UITests.Shared\Windows_UI_Xaml\Resources\Test_Dictionary_Linked.xaml" Link="Linked/Test_Dictionary_Linked.xaml" />
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

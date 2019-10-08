@@ -13,10 +13,22 @@
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_Grid_And_Min_Max.cs" Link="GridTests\Given_Grid_And_Min_Max.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\ListViewBaseTests\Given_ListViewBase.cs" Link="ListViewBaseTests\Given_ListViewBase.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\TextBoxTests\Given_TextBox.cs" Link="TextBoxTests\Given_TextBox.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\TextBlockTests\Given_TextBlock.cs" Link="TextBlockTests\Given_TextBlock.cs" />
     <Compile Include="$(UnoRepoRelativePath)BinderTests\Given_Binder.TwoWay.cs" Link="BinderTests\Given_Binder.TwoWay.cs" />
     <Compile Include="$(UnoRepoRelativePath)DependencyProperty\Given_DependencyProperty.Inversion.cs" Link="DependencyProperty\Given_DependencyProperty.Inversion.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML\Given_ResourceDictionary.cs" Link="Windows_UI_XAML\Given_ResourceDictionary.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML\Given_StaticResource.cs" Link="Windows_UI_XAML\Given_StaticResource.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML\Given_Implicit_Style.cs" Link="Windows_UI_XAML\Given_Implicit_Style.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML\Given_Explicit_Style.cs" Link="Windows_UI_XAML\Given_Explicit_Style.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML\Given_ThemeResource.cs" Link="Windows_UI_XAML\Given_ThemeResource.cs" />
     <Compile Include="$(UnoRepoRelativePath)CollectionViewTests\Given_CollectionViewSource.cs" Link="CollectionViewTests\Given_CollectionViewSource.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\MyControl.cs" Link="App\Views\MyControl.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\MyPoco.cs" Link="App\Views\MyPoco.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\ResourceTestControl.cs" Link="App\Views\ResourceTestControl.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\StylesTestControl.cs" Link="App\Views\StylesTestControl.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\MyBehavior.cs" Link="App\Views\MyBehavior.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\MyDependencyObject.cs" Link="App\Views\MyDependencyObject.cs" />
+    <Compile Include="$(UnoRepoRelativePath)Helpers\AssertEx.cs" Link="Helpers\AssertEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Context.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Namespaces.cs" />
   </ItemGroup>
