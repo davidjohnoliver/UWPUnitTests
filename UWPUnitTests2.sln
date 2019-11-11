@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4886A21A
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uno.UI.Tests.ViewLibrary", "Uno.UI.Tests.ViewLibrary\Uno.UI.Tests.ViewLibrary.csproj", "{25CAC99F-E665-4FC4-9459-D854522E2FBB}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems*{383a8178-16e4-4c2a-82e8-352b7a28a7c2}*SharedItemsImports = 4
@@ -79,6 +81,26 @@ Global
 		{7A2BB6BD-1D8E-4A4E-B23F-BAD3A5F104AB}.Release|x64.Build.0 = Release|Any CPU
 		{7A2BB6BD-1D8E-4A4E-B23F-BAD3A5F104AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{7A2BB6BD-1D8E-4A4E-B23F-BAD3A5F104AB}.Release|x86.Build.0 = Release|Any CPU
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|ARM.Build.0 = Debug|ARM
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|ARM64.Build.0 = Debug|ARM64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|x64.ActiveCfg = Debug|x64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|x64.Build.0 = Debug|x64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|x86.ActiveCfg = Debug|x86
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Debug|x86.Build.0 = Debug|x86
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|ARM.ActiveCfg = Release|ARM
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|ARM.Build.0 = Release|ARM
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|ARM64.ActiveCfg = Release|ARM64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|ARM64.Build.0 = Release|ARM64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|x64.ActiveCfg = Release|x64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|x64.Build.0 = Release|x64
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|x86.ActiveCfg = Release|x86
+		{25CAC99F-E665-4FC4-9459-D854522E2FBB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
