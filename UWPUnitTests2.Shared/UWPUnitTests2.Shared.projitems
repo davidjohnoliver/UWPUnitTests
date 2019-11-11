@@ -28,6 +28,8 @@
     <Compile Include="$(UnoRepoRelativePath)App\Views\StylesTestControl.cs" Link="App\Views\StylesTestControl.cs" />
     <Compile Include="$(UnoRepoRelativePath)App\Views\MyBehavior.cs" Link="App\Views\MyBehavior.cs" />
     <Compile Include="$(UnoRepoRelativePath)App\Views\MyDependencyObject.cs" Link="App\Views\MyDependencyObject.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\SpiffyItemsControl.cs" Link="App\Views\SpiffyItemsControl.cs" />
+    <Compile Include="$(UnoRepoRelativePath)App\Views\BooleanToBrushConverter.cs" Link="App\Views\BooleanToBrushConverter.cs" />
     <Compile Include="$(UnoRepoRelativePath)Helpers\AssertEx.cs" Link="Helpers\AssertEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Context.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Stubs\Namespaces.cs" />

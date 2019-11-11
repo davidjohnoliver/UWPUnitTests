@@ -49,6 +49,9 @@
     <Reference Include="Uno.UI">
       <HintPath>$(UnoRepoRelativePath)..\Uno.UI\obj\Debug\net461\Uno.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Uno.UI.Tests.ViewLibrary">
+      <HintPath>$(UnoRepoRelativePath)..\Uno.UI.Tests.ViewLibrary\obj\Debug\Uno.UI.Tests.ViewLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(UnoRepoRelativePath)/App/App.xaml.cs" Link="App.xaml.cs">
@@ -63,6 +66,7 @@
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_Grid.cs" />
     <Compile Include="$(UnoRepoRelativePath)Windows_UI_XAML_Controls\GridTests\Given_GridLength.cs" />
     <Compile Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml.cs" Link="Xaml/Test_Control.xaml.cs" />
+    <Compile Include="$(UnoRepoRelativePath)/App/Xaml/Test_Page.xaml.cs" Link="Xaml/Test_Page.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSTest.TestAdapter">
@@ -86,8 +90,11 @@
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary.xaml" Link="Xaml/Test_Dictionary.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Inner.xaml" Link="Xaml/Test_Dictionary_Inner.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Theme.xaml" Link="Xaml/Test_Dictionary_Theme.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Isolated.xaml" Link="Xaml/Test_Dictionary_Isolated.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Dictionary_Isolated_2.xaml" Link="Xaml/Test_Dictionary_Isolated_2.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Styles.xaml" Link="Xaml/Test_Styles.xaml" />
     <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Control.xaml" Link="Xaml/Test_Control.xaml" />
+    <Page Include="$(UnoRepoRelativePath)/App/Xaml/Test_Page.xaml" Link="Xaml/Test_Page.xaml" />
     <Page Include="$(UnoRepoRelativePath)..\SamplesApp\UITests.Shared\Windows_UI_Xaml\Resources\Test_Dictionary_Linked.xaml" Link="Linked/Test_Dictionary_Linked.xaml" />
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />

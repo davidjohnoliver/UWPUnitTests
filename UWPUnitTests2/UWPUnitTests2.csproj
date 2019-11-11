@@ -125,6 +125,10 @@
       <DependentUpon>Xaml/Test_Control.xaml</DependentUpon>
       <Link>Xaml/Test_Control.xaml.cs</Link>
     </Compile>
+    <Compile Include="$(UnoRepoRelativePath)App/Xaml/Test_Page.xaml.cs">
+      <DependentUpon>Xaml/Test_Page.xaml</DependentUpon>
+      <Link>Xaml/Test_Page.xaml.cs</Link>
+    </Compile>
     <Compile Include="$(UnoRepoRelativePath)App/App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <Link>App.xaml.cs</Link>
@@ -169,6 +173,16 @@
       <SubType>Designer</SubType>
       <Link>Xaml/Test_Dictionary_Theme.xaml</Link>
     </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Dictionary_Isolated.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Dictionary_Isolated.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Dictionary_Isolated_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Dictionary_Isolated_2.xaml</Link>
+    </Page>
     <Page Include="$(UnoRepoRelativePath)..\SamplesApp\UITests.Shared\Windows_UI_Xaml\Resources\Test_Dictionary_Linked.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -183,6 +197,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <Link>Xaml/Test_Control.xaml</Link>
+    </Page>
+    <Page Include="$(UnoRepoRelativePath)App/Xaml/Test_Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>Xaml/Test_Page.xaml</Link>
     </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -211,6 +230,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Users\david.oliver\.nuget\packages\mstest.testadapter\1.3.2\build\uap10.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Uno.UI.Tests.ViewLibrary\Uno.UI.Tests.ViewLibrary.csproj">
+      <Project>{25cac99f-e665-4fc4-9459-d854522e2fbb}</Project>
+      <Name>Uno.UI.Tests.ViewLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\UWPUnitTests2.Shared\UWPUnitTests2.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
